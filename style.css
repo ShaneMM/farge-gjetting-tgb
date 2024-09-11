@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#rgbDisplay {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.color {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 30px;
+}
+
+#newColors {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button {
+    color: black;
+    border: 3px solid lightgrey;
+    border-radius: 30px;
+}
+
+button:hover {
+    color: white;
+    background-color: gray;
+}
+
+#modeButtons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#modeButtons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.selected {
+    background-color: gray;
+    color: white;
+}
+
+#modeButtons button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
